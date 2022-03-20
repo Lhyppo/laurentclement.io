@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box
+}
+
+.titre {
+    font-family: 'Courier New', Courier, monospace;
+    color: dimgray;
+    text-align: center;
+}
+
+.séparation {
+    color: darkgrey;
+}
+
+.menu_deroulant .entrée-sous-menu:hover {
+    background-color: #ffb5ec;
+    transition: all .8s;
+}
+
+.menu_deroulant ul {
+    width: 162px;
+    list-style: none;
+    padding: 0px;
+}
+
+.menu_deroulant ul li {
+    text-align: left;
+    padding: 7px 7px;
+    max-height: 32px;
+}
+
+.menu_deroulant ul li a {
+    text-decoration: none;
+    color: #2657f7;
+    text-transform: uppercase;
+}
+
+.menu_deroulant ul li:hover {
+    background: #ff78f8;
+    transition: all .8s;
+}
+
+.menu_deroulant ul>li>ul {
+    opacity: 0;
+    display: none;
+    z-index: 999;
+    margin-top: -25px;
+}
+
+.menu_deroulant ul li:hover>ul {
+    display: block;
+    position: relative;
+    opacity: 1;
+    margin-left: 155px
+}
